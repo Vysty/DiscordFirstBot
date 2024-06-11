@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-module.exports = async bot => {
+module.exports = async (bot) => {
     //let FilesInCommande = fs.readdirSync("./Commande");
 
     fs.readdirSync("./Commande").filter(f => f.endsWith(".js")).forEach(async file => {
