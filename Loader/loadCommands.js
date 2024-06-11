@@ -1,9 +1,9 @@
 const fs = require("fs");
 
 module.exports = async (bot) => {
-    //let FilesInCommande = fs.readdirSync("./Commande");
+    let FilesInCommande = fs.readdirSync("./Commande");
 
-    fs.readdirSync("./Commande").filter(f => f.endsWith(".js")).forEach(async file => {
+    FilesInCommande.filter(f => f.endsWith(".js")).forEach(async file => { //Pour chacun des fichiers JS qui sont présent dans Commande en async
 
         let command = require(`../Commande/${file}`); //Récupère la commande
 
