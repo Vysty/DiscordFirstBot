@@ -1,5 +1,3 @@
-// noinspection ES6MissingAwait
-
 const fs = require("fs");
 
 module.exports = async bot => {
