@@ -14,5 +14,3 @@ bot.login(config.token); //récupération du token dans variable config
 //Executions de nos loader avec notre bot en param
 loadCommands(bot);
 loadEvents(bot);
-
-
